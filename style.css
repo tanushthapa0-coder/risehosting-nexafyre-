@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    margin: 0;
+    animation: bgAnimation 20s infinite alternate;
+}
+
+@keyframes bgAnimation {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+header {
+    padding: 30px;
+    background: #0d1b3a;
+    border-bottom: 2px solid #7289da;
+}
+
+.plans {
+    margin-top: 30px;
+}
+
+.plan {
+    background: #1f2c55;
+    padding: 15px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    margin: 12px auto;
+    transition: transform 0.4s, background 0.4s;
+    opacity: 0;
+    transform: scale(0.85);
+}
+
+.plan:hover {
+    transform: scale(1.05);
+    background: #3a4f8c;
+}
+
+.discord {
+    margin-top: 50px;
+}
+
+.discord-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #ff4757;
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s, background 0.3s;
+    animation: pulse 2s infinite;
+}
+
+.discord-btn:hover {
+    background: #e84118;
+    transform: scale(1.15);
+}
+
+@keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.07);}
+    100% {transform: scale(1);}
+}
